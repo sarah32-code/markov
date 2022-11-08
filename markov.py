@@ -58,25 +58,7 @@ def make_chains(text_string):
             value_list.append(words[i+2])
     return (chains)
        
-    # if (words[word+2]) is not chains:
-    #     chains [(words[word+2])]=[]
-    #     chains [(words[word+2])].append(value_list)
-    #     key= (word[i+1])
-    #     value= word[1+2]
-
-    # word= text_string
-
-    # # # for i in range(0, len(word)):
-    # word= text_string
-    # words.append(none)
-    # for i in range(len(word) -2):
-    #     key= (word[i+1])
-    #     value= word[1+2]
-
-    #     if key not in chains:
-    #         chains[key]= []
-    #         chains[key].append(value) 
-
+    
 def make_text(chains):
     """Return text from chains."""
     
@@ -85,13 +67,6 @@ def make_text(chains):
     #List will link random key + value and join at the end
     words = []
 
-    #Convert keys into list and select random keys from list
-#     new_list_keys = list(chains.keys())
-#     random_keys = choice(new_list_keys)
-   
-#    #Convert values into list and select random value from list
-#     new_values = list(chains.values())
-#     random_values = choice(new_values) 
 
     for k, v in chains.items():
             key_list = list(k)
@@ -104,14 +79,6 @@ def make_text(chains):
     words.append(random_value)
     #print(words)        
 
-
-    # while words is not None:
-    #     random_keys= (random_keys[1], words)
-    #    # print (random_keys)
-
-    #words.append(random_keys)
-    #words.append(random_values) 
-    #print('list: {words}')
 
     return ' '.join(words)
 
